@@ -17,7 +17,7 @@ class _RegisterPageState extends State<RegisterPage> {
   Future<void> register() async {
     try {
       var url = Uri.parse(
-        "http://192.168.1.2/flutter_api/auth/register.php",
+        "http://localhost/flutter_api/auth/register.php",
       );
 
       var response = await http.post(
